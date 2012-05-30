@@ -7,6 +7,9 @@ set tabstop=4
 set shiftwidth=4
 set autoindent
 
+" NERDTree Toggle - Map to F2
+map <F2> :NERDTreeToggle<CR>
+
 " Disable Arrow Keys - Use hjkl keys for movement
 nnoremap <up> <nop>
 nnoremap <down> <nop>
