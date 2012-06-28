@@ -1,0 +1,10 @@
+[user]
+	name = Sunny Basi
+	email = sunny.basi@gmail.com
+[alias]
+	s = status
+	st = status
+	stat = status
+	sl = shortlog
+	l = log -p
+	lg = log -p
