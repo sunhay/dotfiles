@@ -7,6 +7,13 @@ set tabstop=2
 set shiftwidth=2
 set autoindent
 
+" Relative Line Numbers
+set rnu
+au InsertEnter * :set nu
+au InsertLeave * :set rnu
+au FocusLost * :set nu
+au FocusGained * :set rnu
+
 " NERDTree Toggle - Map to F2
 map <F2> :NERDTreeToggle<CR>
 
