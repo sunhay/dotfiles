@@ -1,7 +1,8 @@
 set background=dark
+colorscheme solarized
 
 " Formatting
-syntax on
+syntax enable
 set number
 set tabstop=2
 set shiftwidth=2

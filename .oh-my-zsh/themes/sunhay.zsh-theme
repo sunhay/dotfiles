@@ -12,7 +12,7 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%}?"
 
 local git_branch='$(git_prompt_info)%{$reset_color%}($(git_prompt_status)%{$reset_color%})'
 local user='%{$fg[blue]%}%n@%{$fg[red]%}%m:%{$fg[magenta]%}%{$reset_color%}'
-local pwd='%{$fg[magenta]%}%~%{$reset_color%}'
+local pwd='%{$fg[cyan]%}%~%{$reset_color%}'
 
 PROMPT="${user}${pwd}$ "
 RPROMPT="git:${git_branch}"

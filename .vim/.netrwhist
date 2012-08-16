@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/srv/www/staging/project365/_site'
-let g:netrw_dirhist_2='/etc/httpd/conf.d'
-let g:netrw_dirhist_3='/home/sunhay/school/cs454'
-let g:netrw_dirhist_4='/srv/www/staging/project365/posts'
-let g:netrw_dirhist_5='/srv/www/staging/project365/css'
-let g:netrw_dirhist_6='/srv/www/staging/project365/posts'
