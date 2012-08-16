@@ -3,6 +3,8 @@ colorscheme solarized
 
 " Formatting
 syntax enable
+set encoding=utf-8
+set nocompatible 
 set number
 set tabstop=2
 set shiftwidth=2
@@ -18,6 +20,10 @@ au InsertEnter * :set nu
 au InsertLeave * :set rnu
 au FocusLost * :set nu
 au FocusGained * :set rnu
+
+" Powerline settings
+set laststatus=2   " Always show the statusline
+let g:Powerline_symbols = 'fancy'
 
 " Plugin Mappings
 map <C-n> :NERDTreeToggle<CR>
