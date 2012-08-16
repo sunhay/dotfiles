@@ -19,8 +19,9 @@ au InsertLeave * :set rnu
 au FocusLost * :set nu
 au FocusGained * :set rnu
 
-" NERDTree Toggle - Map to F2
-map <F2> :NERDTreeToggle<CR>
+" Plugin Mappings
+map <C-n> :NERDTreeToggle<CR>
+nmap <C-t> :TagbarToggle<CR>
 
 " Disable Arrow Keys - Use hjkl keys for movement
 nnoremap <up> <nop>

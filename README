@@ -1,1 +1,9 @@
 ¯\_(ツ)_/¯
+
+Dependencies
+	zsh
+	oh-my-zsh
+	tmux > 1.6
+	vim > 7.0
+	Exuberant ctags > 5.5
+	git
