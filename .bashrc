@@ -55,6 +55,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     PS1="\e[1;34m\u@\e[m\e[0;31m\h:\e[m\e[0;35m\w\e[m$ "
+		PS1="$PS1"'$([ -n "$TMUX" ] && tmux setenv TMUXPWD_$(tmux display -p "#I_#P") "$PWD")'	
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi

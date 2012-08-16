@@ -35,3 +35,6 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/sunhay/.cabal/bin:/home/sunhay/.local/bin:/home/sunhay/bin
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# 256 colors
+export TERM="xterm-256color"

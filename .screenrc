@@ -1,10 +1,3 @@
 # Look and feel
 caption always "%{= bb}%{+b w}Screen: %n | %h %=%t %c"
 hardstatus alwayslastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
-
-# Left Right meta key mods
-#ALT-,. and ALT-<>
-bindkey "^[<" eval number !echo $WINDOW-1|bc
-bindkey "^[>" eval number !echo $WINDOW+1|bc
-bindkey "^[," prev
-bindkey "^[." next
