@@ -8,3 +8,4 @@
 	sl = shortlog
 	l = log -p
 	lg = log -p
+	tree = log --graph --decorate --pretty=oneline --abbrev-commit
