@@ -1,9 +1,19 @@
 ¯\_(ツ)_/¯
 
+Note: 
+	- Uses Powerline so you'll need a patched font.
+	- Configured for use with the Dark Solarized color scheme
+	- Warning: Any previous dotfiles will be overwritten.
+
+Steps:
+	1. Set your terminal to use the patched Inconsolata font - Available in ~/dotfiles/fonts
+	2. Set your terminal's color scheme to use the Dark Solarized theme. - Available at http://ethanschoonover.com/solarized
+	3. Assuming you've cloned this repository into your home folder, run ./setup.sh - Should be in ~/dotfiles/
+
 Dependencies
+	git
 	zsh
 	oh-my-zsh
 	tmux > 1.6
 	vim > 7.0
 	Exuberant ctags > 5.5
-	git
