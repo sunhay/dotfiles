@@ -6,9 +6,11 @@ Note:
 	- Warning: Any previous dotfiles will be overwritten.
 
 Steps:
-	1. Set your terminal to use the patched Inconsolata font - Available in ~/dotfiles/fonts
-	2. Set your terminal's color scheme to use the Dark Solarized theme. - Available at http://ethanschoonover.com/solarized
-	3. Assuming you've cloned this repository into your home folder, run ./setup.sh - Should be in ~/dotfiles/
+	1. Set zsh as your default shell if it isn't already.
+	2. Install oh-my-zsh - Available at https://github.com/robbyrussell/oh-my-zsh
+	3. Set your terminal to use the patched Inconsolata font - Available in ~/dotfiles/fonts
+	4. Set your terminal's color scheme to use the Dark Solarized theme. - Available at http://ethanschoonover.com/solarized
+	5. Assuming you've cloned this repository into your home folder, run ./setup.sh - Should be in ~/dotfiles/
 
 Dependencies
 	git
