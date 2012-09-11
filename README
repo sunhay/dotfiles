@@ -8,9 +8,10 @@ Note:
 Steps:
 	1. Set zsh as your default shell if it isn't already.
 	2. Install oh-my-zsh - Available at https://github.com/robbyrussell/oh-my-zsh
-	3. Set your terminal to use the patched Inconsolata font - Available in ~/dotfiles/fonts
-	4. Set your terminal's color scheme to use the Dark Solarized theme. - Available at http://ethanschoonover.com/solarized
-	5. Assuming you've cloned this repository into your home folder, run ./setup.sh - Should be in ~/dotfiles/
+	3. Make sure you have all of the dependencies installed w/ correct versions.
+	4. Set your terminal to use the patched Inconsolata font - Available in ~/dotfiles/fonts
+	5. Set your terminal's color scheme to use the Dark Solarized theme. - Available at http://ethanschoonover.com/solarized
+	6. Assuming you've cloned this repository into your home folder, run ./setup.sh - Should be in ~/dotfiles/
 
 Dependencies
 	git
