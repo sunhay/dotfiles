@@ -1,14 +1,26 @@
 set background=dark
 colorscheme solarized
 
+set autoread   " File changed on disk? Show the latest file
+
 " Formatting
 syntax enable
 set encoding=utf-8
 set nocompatible 
 set number
+set autoindent
 set tabstop=2
 set shiftwidth=2
-set autoindent
+set softtabstop=2
+set expandtab
+set nowrap
+set showbreak=↪
+
+" Search
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
 
 " Relative Line Numbers
 set rnu
