@@ -4,25 +4,25 @@ Warning: Any previous dotfiles will be overwritten.
 Configured for use with the Dark Solarized color scheme
 
 1. Set zsh as your default shell if it isn't already.
-	> chsh -s $(which zsh) 
+  > chsh -s $(which zsh) 
 2. Install oh-my-zsh
-	Available at https://github.com/robbyrussell/oh-my-zsh
+  Available at https://github.com/robbyrussell/oh-my-zsh
 3. Make sure you have all of the dependencies installed w/ correct versions.
 4. Set your terminal to use the patched Inconsolata font 
-	Available in /fonts
+  Available in /fonts
 5. Set your terminal's color scheme to use the Dark Solarized theme. 
-	Available at http://ethanschoonover.com/solarized
+  Available at http://ethanschoonover.com/solarized
 6. Assuming you've cloned this repository into ~/dotfiles
-	> cd dotfiles
-	> ./setup.sh
+  > cd dotfiles
+  > ./setup.sh
 
 Dependencies
-	git
-	zsh
-	oh-my-zsh
-	tmux > 1.6
-	vim > 7.0
-	Exuberant ctags > 5.5
+  git
+  zsh
+  oh-my-zsh
+  tmux > 1.6
+  vim > 7.0
+  Exuberant ctags > 5.5
 
 TODO
   Use pathogen or vundle as vim plugin manager
