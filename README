@@ -23,3 +23,6 @@ Dependencies
 	tmux > 1.6
 	vim > 7.0
 	Exuberant ctags > 5.5
+
+TODO
+  Use pathogen or vundle as vim plugin manager
