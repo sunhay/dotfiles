@@ -26,3 +26,5 @@ Dependencies
 
 TODO
   Use pathogen or vundle as vim plugin manager
+  If user doesnt have ruby then don't show empty version information in RPROMPT
+  If user is not in a git repository then don't show nil branch information in RPROMPT
