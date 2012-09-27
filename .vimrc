@@ -38,8 +38,10 @@ set laststatus=2   " Always show the statusline
 let g:Powerline_symbols = 'fancy'
 
 " Plugin Mappings
-map <C-n> :NERDTreeToggle<CR>
-nmap <C-t> :TagbarToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
+inoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> :CommandT<CR>
+inoremap <C-n> :CommandT<CR>
 
 " Disable Arrow Keys - Use hjkl keys for movement
 nnoremap <up> <nop>
