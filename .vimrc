@@ -40,8 +40,6 @@ let g:Powerline_symbols = 'fancy'
 " Plugin Mappings
 nnoremap <C-n> :NERDTreeToggle<CR>
 inoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <C-n> :CommandT<CR>
-inoremap <C-n> :CommandT<CR>
 
 " Disable Arrow Keys - Use hjkl keys for movement
 nnoremap <up> <nop>
