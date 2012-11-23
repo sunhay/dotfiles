@@ -1,10 +1,11 @@
+syntax enable
+let g:solarized_termtrans = 1   " Window transparency? Set to 1 if your terminal is transparent
 set background=dark
 colorscheme solarized
 
 set autoread   " File changed on disk? Show the latest file
 
 " Formatting
-syntax enable
 set encoding=utf-8
 set nocompatible 
 set number
@@ -13,8 +14,7 @@ set tabstop=2
 set shiftwidth=2
 set softtabstop=2
 set expandtab
-set nowrap
-set showbreak=↪
+set backspace=indent,eol,start
 
 " Search
 set hlsearch
