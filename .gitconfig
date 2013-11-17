@@ -9,5 +9,5 @@
 	l = log -p
 	lg = log -p
 	tree = log --graph --decorate --pretty=oneline --abbrev-commit
-[push]
-	default = simple
+[core]
+	editor = vim

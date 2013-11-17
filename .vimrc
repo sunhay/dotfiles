@@ -7,14 +7,31 @@ set autoread   " File changed on disk? Show the latest file
 
 " Formatting
 set encoding=utf-8
-set nocompatible 
+set nocompatible
 set number
 set autoindent
 set tabstop=2
 set shiftwidth=2
-set softtabstop=2
+" set softtabstop=2
 set expandtab
 set backspace=indent,eol,start
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
+  syntax on
+  set hlsearch
+endif
+
+" Display extra whitespace
+set list listchars=tab:»·,trail:·
+
+" Automatically strip whitespace off the end of lines on save
+autocmd BufWritePre *.py :%s/\s\+$//e
+autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd BufWritePre *.cpp :%s/\s\+$//e
+autocmd BufWritePre *.java :%s/\s\+$//e
+autocmd BufWritePre *.scala :%s/\s\+$//e
 
 " Search
 set hlsearch
