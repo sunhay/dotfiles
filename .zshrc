@@ -2,7 +2,10 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="sunhay"
 plugins=(git)
 
-export PATH=/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/home/sunhay/.cabal/bin:/home/sunhay/.local/bin:/home/sunhay/bin
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 export TERM="xterm-256color"
+
+export PATH=$PATH:~/workspace/google_appengine # Add Google App engine
+alias gae="dev_appserver.py src/ --port=3030 --host=0.0.0.0 --admin_port=3031 --admin_host=0.0.0.0"
 
 source $ZSH/oh-my-zsh.sh
