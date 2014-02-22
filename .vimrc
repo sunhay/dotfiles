@@ -12,8 +12,8 @@ set number
 set autoindent
 set tabstop=2
 set shiftwidth=2
-" set softtabstop=2
-set expandtab
+set softtabstop=2
+set expandtab " Expand tabs into spaces
 set backspace=indent,eol,start
 
 " Switch syntax highlighting on, when the terminal has colors
@@ -25,6 +25,7 @@ endif
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
+" set list listchars=tab:  ,trail:·
 
 " Automatically strip whitespace off the end of lines on save
 autocmd BufWritePre *.py :%s/\s\+$//e
