@@ -1,13 +1,27 @@
 [user]
-	name = Sunny Klair
-	email = sunny.basi@gmail.com
+  name = Sunny Klair
+  email = sunny.klair@soundcloud.com
 [alias]
-	s = status
-	st = status
-	stat = status
-	sl = shortlog
-	l = log -p
-	lg = log -p
-	tree = log --graph --decorate --pretty=oneline --abbrev-commit
+  rpull = pull --rebase
+  patch = format-patch -1
+  apply-patch = am -3
+  undo = reset --soft HEAD~1
+  remaster-local = rebase master -i
+  d = diff
+  s = status
+  st = status
+  stat = diff --stat
+  stats = diff --stat
+  sl = shortlog
+  l = log -p
+  lg = log -p
+  tree = log --graph --decorate --pretty=oneline --abbrev-commit
+  unstage = reset HEAD
+  fixup = rebase --interactive HEAD~2
+  show-files = show --pretty="format:" --name-only 
+  latest = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)' --count=15
+  history = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
 [core]
-	editor = vim
+  editor = vim
+[push]
+  default = simple
