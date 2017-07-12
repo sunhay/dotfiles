@@ -8,11 +8,12 @@ ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[yellow]%}●"
 ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}●"
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%}●"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[blue]%}!"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%}?"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[white]%}?"
 
 local git_branch='$(git_prompt_info)%{$reset_color%}($(git_prompt_status)%{$reset_color%})'
-local user='%{$fg[blue]%}%n@%{$fg[red]%}%m:%{$fg[magenta]%}%{$reset_color%}'
-local pwd='%{$fg[cyan]%}%~%{$reset_color%}'
+local user='%{$fg[blue]%}%n'
+local host='%{$fg[red]%}%m:'
+local pwd='%{$fg[cyan]%}%2~%{$reset_color%}'
 
-PROMPT="${user}${pwd}$ "
+PROMPT="${user}:${pwd}$ "
 RPROMPT="git:${git_branch}"
