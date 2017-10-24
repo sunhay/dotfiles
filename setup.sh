@@ -8,6 +8,7 @@ rm ~/.screenrc
 rm ~/.vimrc
 rm -rf ~/.vim
 rm ~/.gitconfig
+rm ~/.gitignore
 rm ~/.oh-my-zsh/themes/sunhay.zsh-theme
 rm ~/.slate
 
@@ -18,6 +19,7 @@ ln -s $PWD/.tmux.conf ~/.tmux.conf
 ln -s $PWD/.vimrc ~/.vimrc
 ln -s $PWD/.vim ~/.vim
 ln -s $PWD/.gitconfig ~/.gitconfig
+ln -s $PWD/.gitignore ~/.gitignore
 ln -s $PWD/.oh-my-zsh/themes/sunhay.zsh-theme ~/.oh-my-zsh/themes/sunhay.zsh-theme 
 ln -s $PWD/.slate ~/.slate
 

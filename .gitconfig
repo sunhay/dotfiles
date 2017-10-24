@@ -1,6 +1,6 @@
 [user]
   name = Sunny Klair
-  email = sunny.klair@soundcloud.com
+  email = sunny.basi@gmail.com
 [alias]
   rpull = pull --rebase
   patch = format-patch -1
@@ -23,5 +23,6 @@
   history = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
 [core]
   editor = vim
+  excludesfile = ~/.gitignore
 [push]
   default = simple
