@@ -1,6 +1,6 @@
 [user]
   name = Sunny Klair
-  email = sunny.basi@gmail.com
+  email = sunny.klair@datadoghq.com
 [alias]
   rpull = pull --rebase
   patch = format-patch -1
