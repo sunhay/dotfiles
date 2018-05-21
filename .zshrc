@@ -5,7 +5,7 @@ plugins=(git)
 export WORKSPACE=$HOME/workspace
 export GOPATH=$WORKSPACE/go
 
-source $HOME/env.sh
+source $HOME/.env.sh
 
 eval "$(rbenv init -)"
 
@@ -17,6 +17,12 @@ PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="$PATH:$HOME/dd/devtools/bin"
 PATH="$PATH:$GOPATH/bin"
 export PATH=~/Library/Python/3.6/bin:$PATH
+
+# Use exa over ls if it exists
+if type "exa" > /dev/null; then
+  alias ls="exa -bghHliS"
+  alias l="exa -bghHliS"
+fi
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/sunny.klair/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/sunny.klair/google-cloud-sdk/path.zsh.inc'; fi
@@ -42,3 +48,4 @@ notes() {
   fi
 
 }
+source ~/.cloudops-cli.completion
