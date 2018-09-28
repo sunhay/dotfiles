@@ -16,7 +16,10 @@ source $ZSH/oh-my-zsh.sh
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="$PATH:$HOME/dd/devtools/bin"
 PATH="$PATH:$GOPATH/bin"
+PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+
 export PATH=~/Library/Python/3.6/bin:$PATH
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Use exa over ls if it exists
 if type "exa" > /dev/null; then
@@ -24,11 +27,7 @@ if type "exa" > /dev/null; then
   alias l="exa -bghHliS"
 fi
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/sunny.klair/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/sunny.klair/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/sunny.klair/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/sunny.klair/google-cloud-sdk/completion.zsh.inc'; fi
+alias k="kubectl"
 
 notes() {
   local fpath=$HOME/notes.md
@@ -49,3 +48,9 @@ notes() {
 
 }
 source ~/.cloudops-cli.completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/sunny.klair/workspace/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/sunny.klair/workspace/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/sunny.klair/workspace/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/sunny.klair/workspace/google-cloud-sdk/completion.zsh.inc'; fi
