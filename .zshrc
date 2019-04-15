@@ -47,6 +47,11 @@ notes() {
   fi
 
 }
+
+br() {
+ git checkout -b sunhay/$1
+}
+
 source ~/.cloudops-cli.completion
 
 # The next line updates PATH for the Google Cloud SDK.

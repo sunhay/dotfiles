@@ -21,6 +21,7 @@
   show-files = show --pretty="format:" --name-only 
   latest = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)' --count=15
   history = for-each-ref --sort=-committerdate refs/heads/ --format='%(committerdate:short) %(authorname) %(refname:short)'
+  push-tags = push --tags origin master
 [core]
   editor = vim
   excludesfile = ~/.gitignore
