@@ -28,6 +28,8 @@ if type "exa" > /dev/null; then
 fi
 
 alias k="kubectl"
+alias kctx="kubectx"
+alias kns="kubens"
 
 notes() {
   local fpath=$HOME/notes.md
