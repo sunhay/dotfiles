@@ -3,7 +3,9 @@ ZSH_THEME="sunhay"
 plugins=(git)
 
 export WORKSPACE=$HOME/workspace
+
 export GOPATH=$WORKSPACE/go
+export NODE_OPTIONS="--max-old-space-size=4096"
 
 source $HOME/.env.sh
 
@@ -52,6 +54,11 @@ notes() {
 
 br() {
  git checkout -b sunhay/$1
+}
+
+curlprobe() {
+  endpoint=$1
+  curl -s --unix-socket /opt/datadog-agent/run/sysprobe.sock http://unix/$1
 }
 
 source ~/.cloudops-cli.completion
