@@ -107,7 +107,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-/usr/share/autojump/autojump.bash
+. /usr/share/autojump/autojump.bash
 
 # Golang settings
 export GOROOT=/usr/local/go
