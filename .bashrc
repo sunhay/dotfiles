@@ -108,3 +108,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 /usr/share/autojump/autojump.bash
+
+# Golang settings
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/workspace/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
